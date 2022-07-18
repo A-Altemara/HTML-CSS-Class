@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    homework10
+  </title>
+
+
+  <style>
+    div{
+      /* outline: 1px solid red; */
+    }
+
+    .h9g{
+      display: grid;
+      grid-template-columns: 150px 150px 150px;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    .profile {
+      border: none;
+      width: 100%;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0px 0px 4px rgba(83, 81, 81, 0.689);
+      margin: 3px;
+      margin-top: 5px;
+      vertical-align: top;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      padding-left: 4px;
+
+    }
+
+    .mutual-friend-count {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-left: 4px;
+    }
+
+    .friend-line{
+      display: grid;
+      grid-template-columns: 25px 1fr;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+    .mini-picture{
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+      border-radius: 99px;
+    }
+
+    .add-friend-button {
+      background-color: rgb(41, 115, 244);
+      color: white;
+      border-radius: 3px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: none;
+      font-size: 10px;
+      margin-left: 4px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="h9g">
+
+    <Div class="profile">
+      <div>
+      <img class="profile-image" src="Sumi.jfif" alt="this is sumi">
+      </div>
+      <div class="profile-details">
+        <div>
+          <p class="name">
+            Sumi
+          </p>
+        </div>
+        <div class="friend-line">
+          <img class="mini-picture" src="diana.JPG" alt="this is diana">
+          <P class="mutual-friend-count">
+            2 mutual friends
+          </P>
+        </div>
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </Div>
+
+    <Div class="profile">
+      <div>
+      <img class="profile-image" src="Kyle.jpg" alt="this is Kyle">
+      </div>
+      <div class="profile-details">
+        <div>
+          <p class="name">
+            Kyle
+          </p>
+        </div>
+        <div class="friend-line">
+          <img class="mini-picture" src="diana.JPG" alt="this is diana">
+          <P class="mutual-friend-count">
+            3 mutual friends
+          </P>
+        </div>
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </Div>
+
+    <Div class="profile">
+      <div>
+      <img class="profile-image" src="Airiel 3.jpg" alt="this is Thor">
+      </div>
+      <div class="profile-details">
+        <div>
+          <p class="name">
+            Thor
+          </p>
+        </div>
+        <div class="friend-line">
+          <img class="mini-picture" src="diana.JPG" alt="this is diana">
+          <P class="mutual-friend-count">
+            4 mutual friends
+          </P>
+        </div>
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </Div>
+
+  </div>
+
+</body>
+
+</html>

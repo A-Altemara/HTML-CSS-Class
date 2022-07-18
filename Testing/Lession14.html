@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <Style>
+    .bottom-right{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    .right-sidebar{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      background-color: green;
+      color: antiquewhite;
+    }
+
+    .all-black{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: black;
+      color: blue;
+    }
+
+    .modal-overlay{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-box{
+      background-color: white;
+      height: 75px;
+      width: 250px;     
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 5px;
+    }
+
+    .modal-title{
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      margin-top: 0;
+    }
+
+    .modal-description{
+      font-size: 14px;
+      margin-top: 0px; 
+    }
+    
+    .modal-button{
+      border-radius: 3px;
+      border: 1px solid rgba(128, 128, 128, 0.421);
+    }
+
+  </Style>
+</head>
+
+
+<body style="height: 3000px;">
+  <!-- <div class="bottom-right">bottom-right</div> -->
+  <div class="right-sidebar">right sidebar</div>
+  <!-- <div class="all-black">all black</div> -->
+
+  <div class="modal-overlay">
+    <div class="modal-box">
+    <p class="modal-title"> Modal Title</p>
+    <p class="modal-description">This is a modal</p>
+    <button class="modal-button">Close</button>
+  </div>
+  </div>
+
+</body>
+
+</html>

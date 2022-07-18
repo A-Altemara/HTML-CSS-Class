@@ -1,0 +1,134 @@
+
+
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video-author,
+.video-stats {
+  margin: 0px;
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  /* text-decoration: underline;
+  border: 2px solid red; */
+  
+}
+
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 900px) {
+  rid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-author,
+.video-stats {
+  font-size: 14px;
+}
+}
+
+
+.channel-picture {
+  width: 40px;
+  vertical-align: top;
+  margin: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.channel-picture .channel-tooltips {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  left: 0;
+  opacity: 0;
+  transition: opacity .015s;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+
+.tooltip-profile-picture {
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+.channel-picture:hover .channel-tooltips{
+  opacity: 1;
+}
+
+.tooltip-video-author{
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.subscriber-Count{
+  font-size: 14px;
+}
+
+.video-info {
+  margin: none;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 99px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
